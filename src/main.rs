@@ -11,9 +11,9 @@ fn main() {
     });
 
     journal_stream.for_each(|entry| {
-        let message = entry.get_message().or(Some("<no-message>")).unwrap();
+        let message = entry.get_message().unwrap_or("<no-message>");
         let fields = entry.get_fields();
-        let transport = entry.get_field(TRANSPORT).or(Some("<none>")).unwrap();
+        let transport = entry.get_field(TRANSPORT).unwrap_or("<none>");
         let timestamp = entry.get_field(SOURCE_REALTIME_TIMESTAMP).or(
             entry.get_field(REALTIME_TIMESTAMP)
         ).expect("should have at least one timestamp");

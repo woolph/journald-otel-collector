@@ -20,7 +20,7 @@ impl JournalStream {
 }
 
 pub fn journal_stream_args(
-    mut args: impl Iterator<Item=String>,
+    args: impl Iterator<Item=String>,
 ) -> Result<JournalStream, Box<dyn Error>> {
     let args = args.skip(1);
 
