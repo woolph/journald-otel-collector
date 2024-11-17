@@ -1,5 +1,5 @@
 [package]
-name = "rust-journald"
+name = "journald-otel-collector"
 version = "0.1.0"
 edition = "2021"
 

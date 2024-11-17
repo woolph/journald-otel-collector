@@ -1,4 +1,4 @@
-# journal-otel-collector
+# journald-otel-collector
 This project is an attempt to implement an otel collector gathering log entries from journald entries implemented in Rust.
 
 ## Prerequisites

@@ -123,6 +123,14 @@ dependencies = [
 ]
 
 [[package]]
+name = "journald-otel-collector"
+version = "0.1.0"
+dependencies = [
+ "chrono",
+ "journald",
+]
+
+[[package]]
 name = "js-sys"
 version = "0.3.72"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -200,14 +208,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "b5b9d34b8991d19d98081b46eacdd8eb58c6f2b201139f7c5f643cc155a633af"
 dependencies = [
  "proc-macro2",
-]
-
-[[package]]
-name = "rust-journald"
-version = "0.1.0"
-dependencies = [
- "chrono",
- "journald",
 ]
 
 [[package]]
